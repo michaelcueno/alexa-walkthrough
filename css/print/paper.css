@@ -191,9 +191,6 @@
 	.reveal section img {
 		display: block;
 		margin: 15px 0px;
-		background: rgba(255,255,255,1);
-		border: 1px solid #666;
-		box-shadow: none;
 	}
 
 	.reveal section small {
