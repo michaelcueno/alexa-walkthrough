@@ -32,6 +32,43 @@
 				</section>
 				<section>
 					<h2>Overview</h2>
+					<ul>
+						<li class="fragment">What's lambda?</li>
+						<li class="fragment">Why doesn't it support Swift?</li>
+						<li class="fragment">Basic setup walkthrough</li>
+						<li class="fragment">Some Alexa SDK walkthrough</li>
+						<li class="fragment">HACK!</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Account Setup</h2>
+					<ul>
+						<li>Pick a team member to create an account</li>
+						<li>Create an account on <a href="https://amazon.com">amazon.com</a></li>
+						<li>Create a personal account on <a href="https://aws.amazon.com">aws.amazon.com</a></li>
+						<li>Create a profile on <a href="https://developer.amazon.com">developer.amazon.com</a></li>
+						<li>Get the Alexa app and register the device</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Download dependencies</h2>
+					<ul>
+						<li>Xcode (soft requirement)</li>
+						<li><a href="https://www.docker.com/products/docker#/mac">docker.com</a></li>
+						<li><a href="https://github.com/choefele/swift-lambda-app">github.com/choefele/swift-lambda-app</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Create Lambda function</h2>
+					<p><a href="https://aws.amazon.com/">aws.amazon.com</a></p>
+					<h2>Create Alexa Skill</h2>
+					<p><a href="https://developer.amazon.com/edw/home.html#/">developer.amazon.com/edw/home.html</a></p>
+				</section>
+				<section>
+					<h2>Back to our workspace...</h2>
+					<pre><code data-trim data-noescape>swift package generate-xcodeproj</code></pre>
+					<h2>Build the app with Docker</h2>
+					<pre><code data-trim data-noescape>./run-integration-tests.sh // -> .build/lambda/lambda.zip</code></pre>
 				</section>
 			</div>
 		</div>
@@ -48,7 +85,7 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
+						{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
